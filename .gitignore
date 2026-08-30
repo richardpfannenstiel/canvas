@@ -1,0 +1,4 @@
+node_modules/
+*.log
+.DS_Store
+# dist/ is intentionally committed — it is what the plugin ships.
