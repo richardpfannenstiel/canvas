@@ -1,6 +1,6 @@
 ---
 description: Walk a UI flow on the simulator and report what happened
-argument-hint: [what to test, e.g. "the signup flow on iOS"]
+argument-hint: "what to test, e.g. the signup flow on iOS"
 disable-model-invocation: false
 ---
 
