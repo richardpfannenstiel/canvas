@@ -1,0 +1,22 @@
+{
+  "name": "canvas",
+  "description": "Control local iOS Simulators and Android emulators from the agent: boot devices, inspect the UI tree, tap, swipe, type, capture screenshots and record video.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Richard Pfannenstiel"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ios",
+    "android",
+    "simulator",
+    "emulator",
+    "idb",
+    "adb",
+    "device-automation",
+    "mobile-testing",
+    "screenshot",
+    "mcp"
+  ],
+  "mcpServers": "./.mcp.json"
+}

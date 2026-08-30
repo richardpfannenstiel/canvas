@@ -2,11 +2,12 @@
 
 Agent-driven control of local **iOS Simulators** and **Android emulators**:
 boot devices, read the accessibility tree, tap/swipe/type, capture screenshots
-and record video — from Claude Code or GitHub Copilot CLI.
+and record video — from Claude Code, GitHub Copilot CLI, or VS Code.
 
-Distributed as a plugin. The functionality lives in a bundled stdio MCP server
-(`dist/canvas.mjs`), which the host spawns as a child process; there is no
-daemon, no port, and nothing leaves the machine.
+Distributed as a plugin for Claude Code, GitHub Copilot CLI, and VS Code. The
+functionality lives in a bundled stdio MCP server (`dist/canvas.mjs`), which
+the host spawns as a child process; there is no daemon, no port, and nothing
+leaves the machine.
 
 ## Install
 
@@ -16,6 +17,10 @@ daemon, no port, and nothing leaves the machine.
 ```
 
 Then run the `doctor` tool (or `/canvas-doctor`) to check the tooling.
+
+The root `plugin.json` is the manifest used by GitHub Copilot and VS Code. The
+equivalent `.claude-plugin/plugin.json` manifest keeps Claude Code support
+working. Both manifests point to the same `.mcp.json` server definition.
 
 ## Requirements
 
